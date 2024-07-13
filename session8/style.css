@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 5px;
+  box-shadow: -7px -5px 29px -13px rgba(0, 0, 0, 0.73);
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.logo,
+.navbar__links {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.logo:hover,
+.navbar__links:hover {
+  background-color: #ccc;
+}
+#home {
+  height: 600px;
+  background-image: url(./assets/architect.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home p {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+#home p span {
+  background-color: #000000c7;
+  font-weight: 600;
+  padding: 10px 12px;
+}
+#projects {
+  margin: 20px 0 40px 0;
+  padding: 25px;
+}
+#projects > p,
+#about p:first-child {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#projects div {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+.projects__box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.projects__card p {
+  position: absolute;
+  padding: 7px 14px;
+  color: #fff;
+  background-color: #000;
+  font-size: 17px;
+}
+.projects__card img {
+  width: 100%;
+}
+#about {
+  padding: 25px;
+  margin-bottom: 40px;
+}
+#about p::marker {
+  color: gray;
+}
+#about > p:nth-child(1) {
+  font-size: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.about__cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+.about__card-img {
+  width: 100%;
+  filter: grayscale(70%);
+}
+.about__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about__card-name {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.about__card-role {
+  color: #777;
+}
+.about__card-btn {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.about__card-btn:hover {
+  background-color: #ccc;
+}
+#contact {
+  padding: 25px;
+}
+#contact p:first-of-type {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+#contact p:nth-child(2) {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.contact__form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.contact__form-inputs input {
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+.contact__form button {
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact__form button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.img-box {
+  padding: 25px;
+}
+.map-img {
+  width: 100%;
+}
+footer {
+  background-color: #000;
+}
+footer p {
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+footer p a {
+  color: #fff;
+}

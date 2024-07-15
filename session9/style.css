@@ -1,0 +1,54 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.navbar .nav-link:hover {
+  background-color: gray;
+}
+.navbar svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.navbar svg:hover {
+  color: red;
+}
+.navbar div {
+  color: #fff !important;
+}
+.about p:nth-child(1),
+.tour .container p:nth-child(1),
+.contact .container p:nth-child(1) {
+  font-size: 3rem;
+}
+.about p:nth-child(2),
+.tour .container p:nth-child(2),
+.contact .container p:nth-child(2) {
+  color: #777;
+  font-style: italic;
+}
+.members div p {
+  font-size: 1.5rem !important;
+}
+.members div img {
+  width: 70%;
+}
+.tour-months div p {
+  font-size: 1rem !important;
+  border-top: 1px solid #eee;
+}
+.tour-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.contact form div p {
+  font-size: 1rem !important;
+}

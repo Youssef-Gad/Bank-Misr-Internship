@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+/* Carasoul */
+.carasoul {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 6rem;
+  background-color: #ccc;
+  width: 30rem;
+  height: 20rem;
+}
+.arrows {
+  position: relative;
+  top: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  align-items: center;
+}
+.carasoul-text {
+  font-size: 2.2rem;
+}
+.arrows i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 0.3rem;
+}
+.arrows i:hover {
+  background-color: #eee;
+}
+.bullets {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bullet {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #eee;
+}
+.bullet.active {
+  background-color: #999;
+}
+/* Card Game */
+.image-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: flex-start;
+  gap: 0.5rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  background-color: #eee;
+  width: 26rem;
+  height: 26rem;
+}
+.image {
+  display: none;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #0000002d;
+  cursor: pointer;
+}
+.image-card {
+  background-color: #999;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.image.done {
+  opacity: 0.2;
+}
+.win {
+  font-size: 3rem;
+  color: green;
+  text-align: center;
+  display: none;
+}

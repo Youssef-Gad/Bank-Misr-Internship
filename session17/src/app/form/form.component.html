@@ -1,0 +1,30 @@
+<form>
+  <input
+    placeholder="Enter Your Task"
+    name="input1"
+    type="text"
+    [(ngModel)]="inputValue"
+  />
+  <button (click)="addTask()">Add</button>
+</form>
+<div class="tasks">
+  <ul>
+    <li *ngFor="let task of tasks">
+      <p>{{ task.content.slice(0, 30) }}</p>
+      <div class="buttons">
+        <button (click)="showEdit()">Edit</button>
+        <button (click)="deleteTask(task)">Delete</button>
+      </div>
+
+      <div class="edit-input" *ngIf="showEditInput">
+        <input
+          type="text"
+          name="input2"
+          placeholder="Enter Your new Value"
+          [(ngModel)]="newValue"
+        />
+        <button (click)="editTask(task, newValue)">Ok</button>
+      </div>
+    </li>
+  </ul>
+</div>
